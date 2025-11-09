@@ -4,10 +4,10 @@ import { SuiClient } from '@mysten/sui.js/client';
 import { TransactionBlock } from '@mysten/sui.js/transactions';
 
 function App() {
-  const [rpc, setRpc] = useState('https://fullnode.testnet.sui.io:443');
+  const [rpc, setRpc] = useState('https://fullnode.devnet.sui.io:443/');
   const [provider, setProvider] = useState(() => new SuiClient({ url: rpc }));
   // package/object id do pacote Move (ex: 0x...)
-  const [pkg, setPkg] = useState('0x0c0ebaa41608123300f948b392640b258ab9db1031d83341b8bf507e4c00a2a8');
+  const [pkg, setPkg] = useState('0xf65952f64c216edf472d3bdd4028005eabd953bb2b5e19b664fcf14327932b17');
   const [account, setAccount] = useState('');
   const [status, setStatus] = useState('');
   const [lastResult, setLastResult] = useState(null);
