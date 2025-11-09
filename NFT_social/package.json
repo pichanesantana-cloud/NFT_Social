@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mysten/wallet-adapter-react": "^11.0.0",
+    "@mysten/wallet-standard": "^0.19.6"
+  }
+}
